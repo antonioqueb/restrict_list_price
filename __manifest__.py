@@ -6,8 +6,8 @@
     'author': 'Alphaqueb Consulting',
     'depends': ['product', 'sale_management'],
     'data': [
-        'security/ir.model.access.csv',
-        'security/security.xml',
+        'security/security.xml',  # Primero carga security.xml
+        'security/ir.model.access.csv',  # Luego carga ir.model.access.csv
     ],
     'installable': True,
     'application': False,
