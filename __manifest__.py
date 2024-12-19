@@ -1,13 +1,14 @@
 {
     'name': 'Restricted List Price',
-    'version': '1.2',
+    'version': '1.3',
     'summary': 'Restricts visibility of the list_price field using a custom group.',
-    'description': 'Makes the list_price field visible only to members of the "Price Viewers" group.',
+    'description': 'Makes the list_price field completely invisible to non-members of the "Price Viewers" group.',
     'author': 'Alphaqueb Consulting',
     'depends': ['product', 'sale_management'],
     'data': [
-        'security/security.xml',  # Primero carga security.xml
-        'security/ir.model.access.csv',  # Luego carga ir.model.access.csv
+        'security/security.xml',
+        'security/ir.model.access.csv',
+        'views/product_template.xml'
     ],
     'installable': True,
     'application': False,
