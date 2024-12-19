@@ -6,8 +6,8 @@
       <field name="inherit_id" ref="product.product_template_form_view"/>
       <field name="arch" type="xml">
         <xpath expr="//field[@name='list_price']" position="attributes">
-          <attribute name="invisible">True</attribute>
-          <attribute name="attrs">{'invisible': [('active', '=', True)]}</attribute>
+             <attribute name="invisible">True</attribute>
+             <attribute name="modifiers">{'invisible': True}</attribute>
         </xpath>
       </field>
     </record>
