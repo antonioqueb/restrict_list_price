@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_price_viewers,access_price_viewers,model_product_template,restrict_list_price.group_price_viewers,1,0,0,0
