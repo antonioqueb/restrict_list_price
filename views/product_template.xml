@@ -7,31 +7,31 @@
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='list_price']" position="attributes">
                     <attribute name="invisible">True</attribute>
-                   <attribute name="modifiers">{'invisible': True}</attribute>
+                    <attribute name="modifiers">{'invisible': True}</attribute>
                 </xpath>
             </field>
         </record>
-         <record id="product_template_hide_list_price_kanban" model="ir.ui.view">
-             <field name="name">product.template.hide.list.price.kanban</field>
+        <record id="product_template_hide_list_price_kanban" model="ir.ui.view">
+            <field name="name">product.template.hide.list.price.kanban</field>
             <field name="model">product.template</field>
             <field name="inherit_id" ref="product.product_template_kanban_view"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='list_price']" position="attributes">
-                    <attribute name="invisible">True</attribute>
+                   <attribute name="invisible">True</attribute>
                     <attribute name="modifiers">{'invisible': True}</attribute>
-                </xpath>
+               </xpath>
             </field>
-        </record>
-        <record id="product_template_hide_list_price_tree" model="ir.ui.view">
-            <field name="name">product.template.hide.list.price.tree</field>
+       </record>
+       <record id="product_template_hide_list_price_tree" model="ir.ui.view">
+           <field name="name">product.template.hide.list.price.tree</field>
             <field name="model">product.template</field>
-            <field name="inherit_id" ref="product.product_template_tree_view"/>
-            <field name="arch" type="xml">
-                <xpath expr="//field[@name='list_price']" position="attributes">
-                    <attribute name="invisible">True</attribute>
-                    <attribute name="modifiers">{'invisible': True}</attribute>
-                </xpath>
-            </field>
-        </record>
+           <field name="inherit_id" ref="product.product_template_tree_view"/>
+           <field name="arch" type="xml">
+               <xpath expr="//field[@name='list_price']" position="attributes">
+                   <attribute name="invisible">True</attribute>
+                   <attribute name="modifiers">{'invisible': True}</attribute>
+               </xpath>
+           </field>
+       </record>
     </data>
 </odoo>

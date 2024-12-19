@@ -18,4 +18,4 @@ class ProductTemplate(models.Model):
           if self.env.user.has_group('restrict_list_price.group_price_viewers'):
                 record.list_price_restricted = record.list_price
           else:
-                record.list_price_restricted = False # no mostrar el campo a usuarios no autorizados.
+                record.list_price_restricted = False
